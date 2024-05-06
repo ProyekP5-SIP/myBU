@@ -223,7 +223,7 @@ html {
 }
 
 .contacts {
-    border-top: 2px solid black;
+    margin-top: 15%;
     height: auto;
     width: 100%;
 }
