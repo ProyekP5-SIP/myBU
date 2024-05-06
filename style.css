@@ -1,0 +1,370 @@
+body, html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 1px 10px 14px -1px rgba(0,0,0,0.5);
+    height: 75px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.top-menu a {
+    height: 70%;
+}
+
+.top-menu img {
+    height: 100%;
+    margin-left: 15px;
+}
+
+.top-menu img:hover {
+    cursor: pointer;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: 15px;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.top-menu a:hover {
+    background-color: darkgray;
+}
+
+.top-menu a.active {
+    color: white;
+    background-color: limegreen;
+}
+
+.bg {
+    margin-top: 75px;
+}
+
+.bg img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+.features {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.main-box {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 1px 41px -8px rgba(0,0,0,0.53);
+}
+
+#top-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.kolase {
+    height: 100%;
+    width: 100%;
+}
+
+.kolase img {
+    width: 100%;
+    height: auto;
+}
+
+.pd {
+
+    height: 357px;
+    width: 100%;
+    background-color: #06923b;
+    padding-bottom: 50px;
+}
+
+.pd h2, .pd p{
+    color: white;
+    padding: 20px;
+}
+
+.pd p {
+    height: auto;
+}
+
+.pd a {
+    text-align: center;
+    display: block;
+    width: 45%;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.pd a:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#bottom-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.forum {
+    width: 100%;
+    height: 357px;
+    background-color: #1a2d80;
+}
+
+.forum h2, .forum p{
+    color: white;
+    padding: 20px;
+}
+
+.forum p {
+    height: auto;
+}
+
+.forum a {
+    text-align: center;
+    display: block;
+    width: 45%;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.forum a:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.pengumuman {
+    width: 100%;
+    height: 357px;
+    background-color: #e37b15;
+}
+
+.pengumuman h2, .pengumuman p{
+    padding: 20px;
+    color: white;
+}
+
+.pengumuman p {
+    height: auto;
+}
+
+.pengumuman a {
+    text-align: center;
+    display: block;
+    width: 45%;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.pengumuman a:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.contacts {
+    border-top: 2px solid black;
+    height: auto;
+    width: 100%;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+#overall-left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#left-section {
+    height: 100%;
+    width: 100%;
+}
+
+#left-section h2 {
+    text-align: center;
+    padding: 0px;
+}
+
+#left-section h2, ul, li {
+    padding: 10px;
+    list-style: none;
+}
+
+#middle-section {
+    height: 100%;
+    width: 100%;
+}
+
+#middle-section h2 {
+    text-align: center;
+    padding: 0px;
+}
+
+#middle-section h2, ul, li, .contact-link {
+    color: black;
+    padding: 10px;
+    list-style: none;
+}
+
+#overall-right {
+    height: 100%;
+    width: 100%;
+}
+
+#right-section {
+    height: 100%;
+    width: 100%;
+}
+
+#right-section h2 {
+    text-align: center;
+    padding: 0px;
+}
+
+#right-section form, #right-section label, #right-section input {
+    padding: 20px;
+    border: none;
+}
+
+#right-section input {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    width: 75%;
+    margin-left: 18px
+}
+
+#right-section #submit-button {
+    border: none;
+    padding: 10px;
+    width: 25%;
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+#right-section #submit-button:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+@media (min-width: 576px) {
+    #top-section {
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+    }
+
+    .kolase {
+        width: auto;
+    }
+
+    .features {
+        margin-bottom: 100px;
+    }
+
+    .main-box {
+        width: 80%;
+        height: auto;
+    }
+
+    .pd {
+        height: auto;
+    }
+
+    #bottom-section {
+        flex-direction: row;
+        height: 50%;
+
+    }
+
+    .forum {
+        height: auto;
+    }
+
+    .forum a {
+        margin-bottom: 30%;
+    }
+
+    .pengumuman {
+        height: auto;
+    }
+
+    .contact-box {
+        flex-direction: row;
+        height: auto;
+
+    }
+
+    #overall-left {
+        flex-direction: row;
+        height: auto;
+
+    }
+}

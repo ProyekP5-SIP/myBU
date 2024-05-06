@@ -1,0 +1,511 @@
+body, html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 1px 10px 14px -1px rgba(0,0,0,0.5);
+    height: 75px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.top-menu a {
+    height: 70%;
+}
+
+.top-menu img {
+    height: 100%;
+    margin-left: 15px;
+}
+
+.top-menu img:hover {
+    cursor: pointer;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: 15px;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.top-menu a:hover {
+    background-color: darkgray;
+}
+
+.top-menu a.active {
+    color: white;
+    background-color: limegreen;
+}
+
+#main-pd-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+#main-pd-container img {
+    width: 100%;
+    height: auto;
+}
+
+#pd-desc {
+    display: flex;
+    flex-direction: column;
+    background-color: #e37b15;
+    padding: 20px;
+    height: 396px;
+}
+
+#pd-desc h1, #pd-desc p {
+    color: white;
+}
+
+#pd-desc p {
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 40px;
+    font-weight: lighter;
+}
+
+#pd-desc h1 {
+    height: auto;
+}
+
+#pengumuman {
+    margin-top: 40px;
+    width: 100%;
+    height: 396px;
+    background-color: #e37b15;
+    padding: 20px
+}
+
+#pengumuman h1 {
+    color: white;
+    height: auto;
+    text-align: center;
+}
+
+#pd-select {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+#pd-container h1 {
+    text-align: center;
+}
+
+#pd-select div {
+    width: 100%;
+    height: 546px;
+    background-color: #e37b15;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+#research-pd img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+#rs-desc h2 {
+    color: white;
+    height: auto;
+    text-align: center;
+}
+
+#rs-desc a {
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+#rs-desc a:hover {
+    background-color: black;
+    color: white;
+}
+
+#it-club img {
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+}
+
+#it-desc h2 {
+    color: white;
+    height: auto;
+    text-align: center;
+}
+
+#it-desc a {
+    display: block;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+#it-desc a:hover {
+    background-color: black;
+    color: white;
+}
+
+#mandarin-club img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; 
+}
+
+#mand-desc h2 {
+    color: white;
+    text-align: center;
+}
+
+#mand-desc a {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+#mand-desc a:hover {
+    background-color: black;
+    color: white;
+}
+
+#jurnal-club img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+#jurnal-desc h2 {
+    color: white;
+    text-align: center;
+}
+
+#jurnal-desc a {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+
+#jurnal-desc a:hover {
+    background-color: black;
+    color: white;
+}
+
+#debat-club img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+#debat-desc h2 {
+    color: white;
+    text-align: center;
+}
+
+#debat-desc a {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+
+#debat-desc a:hover {
+    background-color: black;
+    color: white;
+}
+
+.contacts {
+    height: auto;
+    width: 100%;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+#overall-left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#left-section {
+    height: 100%;
+    width: 100%;
+}
+
+#left-section h2 {
+    text-align: center;
+    padding: 0px;
+}
+
+#left-section h2, ul, li {
+    padding: 10px;
+    list-style: none;
+}
+
+#middle-section {
+    height: 100%;
+    width: 100%;
+}
+
+#middle-section h2 {
+    text-align: center;
+    padding: 0px;
+}
+
+#middle-section h2, ul, li, .contact-link {
+    color: black;
+    padding: 10px;
+    list-style: none;
+}
+
+#overall-right {
+    height: 100%;
+    width: 100%;
+}
+
+#right-section {
+    height: 100%;
+    width: 100%;
+}
+
+#right-section h2 {
+    text-align: center;
+    padding: 0px;
+}
+
+#right-section form, #right-section label, #right-section input {
+    padding: 20px;
+    border: none;
+}
+
+#right-section input {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    width: 75%;
+    margin-left: 18px
+}
+
+#right-section #submit-button {
+    border: none;
+    padding: 10px;
+    width: 25%;
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+#right-section #submit-button:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+@media (min-width: 576px) {
+    #main-pd-container {
+        margin: auto;
+        margin-top: 90px;
+        width: 85%;
+        flex-direction: row;
+        border-radius: 5px;
+        overflow: hidden;
+
+    }
+
+    #main-pd-container img {
+        width: 50%;
+        order: 2;
+    }
+
+    #pd-desc {
+        order: 1;
+        height: auto;
+    }
+
+    #pd-desc p {
+        font-size: 1rem;
+        line-height: 20px; 
+    }
+
+    #pengumuman {
+        width: 85%;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #pd-select {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+
+    }
+
+    #research-pd {
+        margin: auto;
+        max-width: 45%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    #research-pd img {
+        display: block;
+        max-width: 550px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #it-club {
+        margin: auto;
+        max-width: 45%;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #it-club img {
+        display: block;
+        max-width: 550px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #mandarin-club {
+        margin: auto;
+        max-width: 45%;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #mandarin-club img {
+        display: block;
+        max-width: 550px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #jurnal-club {
+        margin: auto;
+        max-width: 45%;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #jurnal-club img {
+        display: block;
+        max-width: 550px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #debat-club {
+        margin: auto;
+        max-width: 45%;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #debat-club img {
+        display: block;
+        max-width: 550px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+
+    .contact-box {
+        flex-direction: row;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+
+    }
+
+    #overall-left {
+        flex-direction: row;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+
+    }
+}

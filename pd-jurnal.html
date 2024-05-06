@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myBU</title>
+    <link rel="stylesheet" href="style-jurnal.css">
+</head>
+<body>
+    <nav class="top-menu">
+        <a href="/">
+            <img src="/icons/Logo Budi Utama-1.png" alt="logo bu">
+        </a>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>          
+    </nav>
+
+    <div id="img-bg">
+        <div id="img-overlay">
+            <h1>About</h1>
+        </div>
+        <img src="/icons/dk.png" alt="">
+    </div>
+
+    <div id="jurnal-desc">
+        <h1>Journalistic Club</h1>
+        <p>Club ini memungkinkan siswa untuk belajar tentang penulisan berita, jurnalisme, investigasi, editing, dan produksi media. Siswa-siswi yang mengikuti journalistic club dapat membuat publikasi sekolah/mengelola situs web berita.</p>
+    </div>
+
+    <div id="galeri-kegiatan">
+        <h1>Galeri Kegiatan</h1>
+        <p>Berikut adalah beberapa dokumentasi dari kegiatan siswa-siswi research club pada saat mereka mengikuti club.</p>
+    </div>
+
+    <div class="slider">
+        <img id="img-1" src="/icons/jur1.png" alt="Image 1"/>
+        <img id="img-2" src="/icons/jur2.png" alt="Image 2"/>
+      </div>
+      <div class="navigation-button">
+        <span class="dot active" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+      </div>
+
+      <div class="contacts">
+        <div class="contact-box">
+            <div id="overall-left">
+                <div id="left-section">
+                    <h2>SMA Budi Utama</h2>
+                    <ul>
+                        <li>Jl. Wijayakusuma No.122 (Belakang TVRI), Yogyakarta (SMP, SMA)</li>
+                        <li>Telp:</li>
+                        <li>0274-555864</li>
+                        <li>Fax:</li>
+                        <li>0274-515974</li>
+                        <li>Email:</li>
+                        <li>budiutama@budiutama-jogja.sch.id</li>
+                    </ul>
+                </div>
+                <div id="middle-section">
+                    <h2>Sosial Media</h2>
+                    <ul>
+                        <li>
+                            <a class="contact-link" href="">Instagram</a>
+                        </li>
+                        <li>
+                            <a class="contact-link" href="">Youtube</a>
+                        </li>
+                        <li>
+                            <a class="contact-link" href="">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="overall-right"><div id="right-section">
+                    <h2>Kontak kami</h2>
+                    <form action="">
+                        <label for="">Nama depan</label><br>
+                        <input type="text"><br><br>
+                        <label for="">Nama belakang</label><br>
+                        <input type="text"><br><br>
+                        <label for="">Email</label><br>
+                        <input type="text"><br><br>
+                        <label for="">Tuliskan pesan Anda</label><br>
+                        <input type="text"><br><br>
+                        <input id="submit-button" type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
