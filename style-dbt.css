@@ -246,7 +246,33 @@ html {
 
 @media (min-width: 576px) {
 
+    #img-bg {
+        margin: auto;
+        margin-top: 75px;
+        width: 60%;
+        position: relative;
+    }
+
+    #img-overlay {
+        background-color: white;
+        position: absolute;
+        left: 27%;
+        top: 35%;
+        width: 50%;
+    }
+
+    #dbt-desc {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
     #galeri-kegiatan {
+        width: 60%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
         height: 50%;
         align-content: center;
     }
@@ -256,10 +282,20 @@ html {
         color: white;
         
     }
+
+    #img-kegiatan {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        margin: auto;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10%;
+    }
     
     #img-kegiatan img {
+        margin: auto;
         width: 50%;
-        margin-bottom: 10%;
     }
     
     #galeri-kegiatan p {
