@@ -315,3 +315,84 @@ html {
     cursor: pointer;
     background-color: darkgray;
 }
+
+@media (min-width: 576px) {
+
+    #img-bg {
+        margin: auto;
+        margin-top: 75px;
+        width: 60%;
+        position: relative;
+    }
+
+    #img-overlay {
+        background-color: white;
+        position: absolute;
+        left: 27%;
+        top: 35%;
+        width: 50%;
+    }
+
+    #dbt-desc {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #galeri-kegiatan {
+        width: 60%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 50%;
+        align-content: center;
+    }
+
+    #galeri-kegiatan h1 {
+        text-align: center;
+        color: white;
+        
+    }
+
+    #img-kegiatan {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        margin: auto;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    
+    #img-kegiatan img {
+        margin: auto;
+        width: 50%;
+    }
+    
+    #galeri-kegiatan p {
+        color: white;
+        width: 60%;
+        margin: auto;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .contact-box {
+        flex-direction: row;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+
+    }
+
+    #overall-left {
+        flex-direction: row;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+
+    }
+}
